@@ -3,7 +3,12 @@
 :root{
     --yellow-color:#FFFF00
     --yellow-light:#F8F184;
-    --blue-color:#19587D;
+    --blue-color:#75a6c2d3;
+    --white-colore:#FFFFFF;
+    --gradient-white:#eddebf69;
+    --gradient-red:#8900096b;
+    --black-color:#000;
+    --gradient-
 }
 *{
     margin: 0;
@@ -30,6 +35,134 @@ button{
 body {
     background-color: black;
     color: white;
-    font-family: 'Space-Grotesk';
+    font-family: 'Space Grotesk';
     font-weight: 300;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul a {
+    color: var(--white-colore);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+
+}
+nav ul a:hover {
+    color: var(--yellow-color);
+}
+
+/* Design de la partie en-tête hero */
+
+#hero{
+    background-image: url(../Illustrations/Bathome1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+#hero .titre {
+    margin: 20px 0;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--white-colore);
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    box-shadow: var(--black-color) 5px 5px 60px;
+}
+#hero .flèche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 288px;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+
+.scroll .social{
+    margin-top: 15px;
+}
+/* Design de la section batman personnage */
+#batman-cinema, #nemesis, #alliés, #justice-league{
+    margin-top: 15px;
+}
+
+.batman-personnage, .nemesis-personnage, .alliés-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+
+#batman-cinema .titre, #nemesis .titre, #alliés .titre, #justice-league .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman-cinema .description, #nemesis .description, #alliés .description, #justice-league .description{
+    margin: 40px;
+    text-align: justify;
+    width: 80%;
+
+}
+
+.personnage-info{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Design de la section multimedia */
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#multimedia .slider-image{
+    width: 100%;
+}
+
+#multimedia .slider-content{
+    padding: 15px;
+    background-color: var(--blue-color);
+    font-family: 'Space Grotesk';
+}
+
+#multimedia .p{
+    font-size: 14px;
+}
+
+#multimedia .titre{
+    font-weight: bold;
 }
