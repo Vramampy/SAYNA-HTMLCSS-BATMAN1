@@ -8,7 +8,9 @@
     --gradient-white:#eddebf69;
     --gradient-red:#8900096b;
     --black-color:#000;
-    --gradient-
+    --gradient-grey:#eddebf42;
+    --gradient-blue:#19587d59;
+    --grey-light:#C4C4C4;
 }
 *{
     margin: 0;
@@ -39,6 +41,13 @@ body {
     font-weight: 300;
 }
 
+.up-bar{
+    border-top: var(--grey-light) 2px solid;
+    position: relative;
+    top: 132px;
+    left: 102px;
+    width: 80%;
+}
 nav {
     display: flex;
     align-items: center;
@@ -61,6 +70,9 @@ nav ul a:hover {
     color: var(--yellow-color);
 }
 
+.logo:hover{
+    filter: invert(44%) sepia(100%) brightness(100%) contrast(200%);
+}
 /* Design de la partie en-tête hero */
 
 #hero{
@@ -143,6 +155,17 @@ nav ul a:hover {
 }
 
 /* Design de la section multimedia */
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+
+#multimedia button.right {
+    right: -1450px;
+}
+
 #multimedia .slider-multimedia{
     display: flex;
     width: 60%;
@@ -155,8 +178,12 @@ nav ul a:hover {
 
 #multimedia .slider-content{
     padding: 15px;
-    background-color: var(--blue-color);
-    font-family: 'Space Grotesk';
+    background: linear-gradient(
+        80deg, var(--gradient-grey),var(--gradient-blue)
+    ) ;
+   /*border-radius: 20px*/
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
 }
 
 #multimedia .p{
@@ -165,4 +192,127 @@ nav ul a:hover {
 
 #multimedia .titre{
     font-weight: bold;
+}
+
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
+
+
+/*Design de la partie contact de la formulaire*/
+#contact{
+    background-color: darkslategrey;
+    padding: 70px 0;
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#contact .titre{
+    display: block;
+    margin: 28px 0;
+}
+
+#contact .form input[type='email'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(219, 211, 211);
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid  rgb(219, 211, 211);
+}
+
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+::placeholder{
+    color: var(--grey-light) ;
+    font-size: 15px;
+}
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulaire input [type="radio"]{
+    opacity: 0;
+}
+
+.btn-group label{
+    text-decoration:none;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: var(--black-color) 5px 5px 60px;
+}
+
+input[type="submit"]{
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    text-align: center;
+    justify-content: center;
+}
+
+/*Design de la section citation*/
+#citation{
+    margin: 90px;
+}
+#citation .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin:0 auto;
+}
+
+#citation .citation-auteur{
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: "rajdhani";
+}
+
+#citation .guillement-close{
+    float: right;
+}
+
+/*Design du footer*/
+footer{
+    margin-top: 162px;
+}
+
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .social-footer{
+    text-align: center;
+    margin: auto50px 0;
+}
+
+footer .social item{
+    padding: 15px;
 }

@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="./Assets/CSS/style.css">
 </head>
 <body>
+    <div class="up-bar"></div>
+    <div class="left-bar"></div>
+    <div class="right-bar"></div>
 <header>
     <nav class="container">
         <a href="index.html">
-            <img src="./Assets/Logos/logohome.png" alt="logo">
+            <img class="logo" src="./Assets/Logos/logohome.png" alt="logo">
         </a>
         <ul>
             <li> <a href="index.html">Home </a></li>
@@ -86,7 +89,7 @@
 <section id="nemesis">
     <div class="container">
         <h1 class="titre">NÉMÉSIS</h1>
-        <img src="./Assets/Illustrations/Bathome13.png" alt="Bathome13">
+        <img class="nemesis-photo" src="./Assets/Illustrations/Bathome13.png" alt="Bathome13">
         <p class="description">Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart
             du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou
             psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se mesurer à
@@ -192,7 +195,7 @@
             <div class="slider-content">
                 <h2 class="titre">ACTION, Adventure</h2>
                 <h3>Batman Begins</h3>
-                <p class="titre">IMDB : <span style ="color: yellow">8.2</span></p>
+                <p class="titre">IMDB : <span class="yellow">8.2</span></p>
                 <p>Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément
                     traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de
                     guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à
@@ -206,69 +209,78 @@
         </div>
     </div>
 </section>
+
 <!--Formulaire-->
-<div>
+<section id="contact">
+<div class="form">
     <h2>PRENONS CONTACT</h2>
     <form action="">
-        <label for="email">ADRESSE EMAIL</label>
-        <input type="email"name="email"placeholder="Adresse email">
-        <label for="newsletter">NEWSLETTER</label><br>
+        <label class="titre" for="email">ADRESSE EMAIL</label>
+        <input type="email"name="email"placeholder="Mon email">
+        <label class="titre" for="newsletter">NEWSLETTER</label>
         <label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de
             Batman :
-        </label><br>
+        </label>
         <input type="checkbox">
         <br>
         <div>
             <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span> 
-            <span>
+            <span class="icon">
                 <img src="./Assets/Logos/icon_flèche_2.png" alt="icon_flèche_2">
             </span>
         </div>
         <div>
-            <p>Souhaitez-vous recevoir des news</p>
+            <p class="news">Souhaitez-vous recevoir des news</p>
         </div>
-        <a href="">Des films</a>
-        <a href="">Des comics</a>
-        <a href="">De tout</a>
-        <p>MESSAGE</p>
+        <div class="btn-group">
+            <input type="radio" id="film">
+            <label for="film">Des films</label>
+            <input type="radio" id="comics">
+            <label for="comics">Des comics</label>
+            <input type="radio" id="tout">
+            <label for="tout">De tout</label>
+        </div>
+        <p class="titre">MESSAGE</p>
         <textarea name="" id="" cols="30" rows="10"placeholder="Laissez un commentaire pour la communauté"></textarea>
         <input type="submit"value="CONFIRMER">
     </form>
 </div>
+</section>
+
 <!--Section citation-->
-<section>
-    <div>
-        <div>
+<section id="citation">
+    <div class="container">
+        <div class="guillement-open">
             <img src="./Assets/Logos/icon_guillemets_1.png" alt="">
         </div>
-        <div>
+        <div class="citation-carte">
             <div>
-                <p>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
+                <p class="citation-text">La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
             </div>
-            <div>
+            <div class="citation-auteur">
                 The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)
             </div>
         </div>
-        <div>
+        <div class="guillement-close ">
             <img src="./Assets/Logos/icon_guillemets_2.png" alt="icon_guillemets_2">
         </div>
     </div>
 </section>
 </main>
 <footer>
-    <div>
-        <div>
+    <div class="container">
+        <div class="texte-footer">
             <img src="./Assets/Logos/icon_WB.png" alt="icon_WB">
-            <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan &
-                Snyder & Reeves</p>
+            <span>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan &
+                Snyder & Reeves</span>
         </div>
-        <div>
-            <a href="#">
+        <div class="social-footer">
+            <a href="#" class="social-item">
                 <img src="./Assets/Logos/logo_sayna_white.png" alt="logo_sayna_white">
                 <img src="./Assets/Logos/icon_x.png" alt="icon_x">
                 <img src="./Assets/Logos/icon_DC.png" alt="icon_DC">
             </a>
-            <a href="">
+            <a href="" class="social-item">
                 <img src="./Assets/Logos/icon_facebook.png" alt="icon_facebook">
                 <img src="./Assets/Logos/icon_ig.png" alt="icon_ig">
                 <img src="./Assets/Logos/icon_tw.png" alt="icon_tw">
